@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applica e Rimuovi Filtro di Colore</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .panel {
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid #000;
+            max-width: 100%;
+            height: auto;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Applica e Rimuovi Filtro di Colore</h1>
+    <div class="container">
+        <!-- Primo pannello -->
+        <div class="panel" id="panel1">
+            <h2>Pannello 1</h2>
+            <canvas id="canvas1"></canvas>
+            <div class="buttons">
+                <button id="filter1">Applica Filtro Pantone 6C3B2A</button>
+            </div>
+        </div>
+
+        <!-- Secondo pannello -->
+        <div class="panel" id="panel2">
+            <h2>Pannello 2</h2>
+            <canvas id="canvas2"></canvas>
+            <div class="buttons">
+                <button id="filter2">Applica Filtro Pantone 2A6478</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
